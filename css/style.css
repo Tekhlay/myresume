@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.resume-header {
+    width: 367px;
+}
+
+.nav-bar {
+    background-color: #3a4e05;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.profile-logo {
+    border: 1px solid #3a4e05;
+    border-style: dotted;
+    border-radius: 50px;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: 1px solid #cdcdcd;
+    border-style: dotted;
+}
+
+.menu-bar {
+    border: none;
+    outline: none;
+    background-color: #3a4e05;
+}
+
+.menu-bar i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: white;
+}
+
+.resume-content {
+    width: 367px;
+    background-color: #faeee7;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.abt-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.resume-footer {
+    width: 367px;
+    background-color: #faeee7;
+    position: absolute;
+    bottom: 0;
+}
