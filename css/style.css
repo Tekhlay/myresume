@@ -4,9 +4,16 @@
 }
 
 body {
+    background-color: #faeee7;
+    color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+  
 .resume-header {
     width: 100%;
 }
@@ -97,7 +104,7 @@ img {
 
 .resume-content {
     width: 100%;
-    background-color: #faeee7;
+    /* background-color: #faeee7; */
 }
 
 .bio {
@@ -300,9 +307,30 @@ img {
     padding: 10px;
 }
 
+@keyframes glowing {
+    0% {
+      background-color: #6e706e;
+      box-shadow: 0 0 5px #2ba805;
+    }
+    50% {
+      background-color: #a9afa8;
+      box-shadow: 0 0 20px #49e819;
+    }
+    100% {
+      background-color: #2ba805;
+      box-shadow: 0 0 5px #090d08;
+    }
+  }
+
+  .resumebtn {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    animation: glowing 1300ms infinite;
+  }
+
 .resume-footer {
     width: 100%;
-    background-color: #faeee7;
     position: relative;
     bottom: 0;
 }
@@ -349,7 +377,17 @@ img {
 
     .profile-logo {
         margin-left: 20px;
+        animation: roll 3s infinite;
+        transform: rotate(360deg);
     }
+    @keyframes roll {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
 
     .header-nav-desktop a {
         text-decoration: none;
@@ -363,7 +401,6 @@ img {
     .resume-content {
         width: 97%;
         padding: 20px;
-        background-color: #faeee7;
     }
 
     .bio{
@@ -437,6 +474,10 @@ img {
         gap: 10px;
     }
 
+    .project-card:hover {
+        cursor: pointer;
+    }
+
     .project-card img {
         width: 100%;
         border-radius: 10px;
@@ -497,7 +538,7 @@ img {
 
     .image-card {
         width:80%;
-        height: 600px;
+        height: 500px;
         left: 130px;
         top: 292px;
         margin: 0 auto;
@@ -583,13 +624,4 @@ img {
     .resume-footer {
         width: 100%;
     }
-
-    /* #myVideo {
-        position: none;
-        right: 0;
-        bottom: 0;
-        min-width: 100%; 
-        min-height: 100%;
-      } */
-    
 }

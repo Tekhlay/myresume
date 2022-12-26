@@ -10,6 +10,22 @@ const mobileside = document.querySelector('.menu-bar');
 const popUpmenu = document.querySelector('.popup-menu');
 const close = document.querySelector('.btn-close');
 const ListProject = document.querySelector('.project');
+const mode = document.querySelector('.mode');
+
+const date = document.querySelector('.date');
+date.textContent = new Date().getFullYear();
+
+const myMode = () => {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    if (element.classList.contains("dark-mode")) {
+        mode.innerHTML = `<i class="fa-solid fa-moon"></i>`;
+    }
+    else {
+        mode.innerHTML = `<i class="fa-solid fa-sun"></i>`;
+    }
+   
+ }
 
 
 close.addEventListener('click', () => {
