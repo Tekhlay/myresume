@@ -136,6 +136,7 @@ img {
     gap: 20px;
     list-style: none;
     justify-content: center;
+    margin: 20px 0;
 }
 .project {
     display: none;
@@ -170,12 +171,14 @@ img {
     max-width:80%;
     width: 350px;
     height: auto;
-    border: 2px solid #666763;
+    background-color: #fffffe;
+    /* border: 2px solid #666763; */
+    box-shadow: 1px 10px 10px 0 rgb(0 0 0 / 20%);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .project-card img {
@@ -218,19 +221,18 @@ img {
 }
 
 .project-popup {
-    max-width: 80%;
     position: fixed;
-    display: none;
-    flex-direction: column;
-    gap: 20px;
-    background-color: rgba(5, 2, 10, 0.8);
-    color: white;
-    border-radius: 5px;
-    box-shadow: 2px 2px 2px #0a0a0a;
-    z-index: 1;
-    top: 0;
+    width: 100%;
+    height: 100%;
     left: 0;
-    margin:20px 60px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(42, 36, 36);
+    background: #fffffe;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+   
 }
 
 .project-popup img {
@@ -241,24 +243,52 @@ img {
 
 .exit {
     align-self: flex-end;
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: 20px;
 }
 
-.exit:hover {
-    font-size: 20px;
-    font-weight: 600;
+.exit span:hover {
     cursor: pointer;
 }
 
-.btnprojects {
+.btnsource {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
     gap: 20px;
+    align-self: flex-end;
+    margin-right:80px;
+}
+
+.btnsource a {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px;
+    background-color: #faeee7;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.project-popup ul {
+    padding: 20px;
+    align-self: flex-start;
+    list-style: none;
+}
+
+.project-details {
+    width: 100%;
+    margin: 20px 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: justify;
+    /* color: #1A2236; */
 }
 
 .about-me {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     display: none;
     flex-direction: column;
@@ -280,6 +310,52 @@ img {
     font-weight: 300;
     font-size: 18px;
     text-align: justify;
+}
+
+.publications {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+}
+
+.publication-title {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    margin: 100px 0 20px;
+}
+
+.publication-card {
+    color: #6e706e;
+    background-color: #fffffe;
+    margin-bottom: 1.5rem;
+    box-shadow: 1px 10px 10px 0 rgb(0 0 0 / 10%);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+
+.publication-card img {
+    display: none;
+}
+
+.papers {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-description {
+    text-align: justify;
+    line-height: 2;
+    margin: 10px;
+}
+
+.article-url {
+    font-weight: 500;
+    color: #6e706e;
+    padding: 10px;
+    text-decoration: none;
 }
 
 .get-in-touch {
@@ -323,6 +399,7 @@ img {
   }
 
   .resumebtn {
+    max-width: 100%;
     text-decoration: none;
     padding: 10px;
     border-radius: 10px;
@@ -450,7 +527,7 @@ img {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         margin: 80px 20px 20px;
         gap: 20px;
     }
@@ -459,19 +536,18 @@ img {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 20px;
         align-items: center;
+        justify-content: space-around;
     }
     .project-card {
-        width: 40%;
+        width: 45%;
         height: auto;
-        border: 2px solid #666763;
-        border-radius: 10px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        gap: 10px;
+        gap: 20px;
     }
 
     .project-card:hover {
@@ -524,14 +600,14 @@ img {
     .project-popup {
         position: absolute;
         width:70%;
-        height: 1400px;
+        height: 900px;
         left: 90px;
         top: 70px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        color: #fff;
-        background: #100f0f;
+        color: rgb(42, 36, 36);
+        background: #fffffe;
         box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
        
     }
@@ -578,25 +654,42 @@ img {
         padding: 10px;
         background-color: #faeee7;
         border-radius: 10px;
+        margin-top: 10px;
     }
 
     .project-popup ul {
+        padding: 20px;
+        align-self: center;
         list-style: none;
     }
 
     .project-details {
         width: 500px;
-        height: 216px;
         left: 370px;
-        top: 1218px;
+        margin-bottom: 20px;
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 27px;
+        text-align: justify;
         /* color: #1A2236; */
     }
 
+    .publications {
+        display: none;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .publication-card img {
+        display: block;
+        width: 111px;
+        height: 142px;
+        border: 1px solid rgba(0,0,0,.15);
+        box-shadow: 0 1px 2px rgb(0 0 0 / 15%);
+        border-radius: 0;
+    }
 
     .get-in-touch {
         width: 100%;
