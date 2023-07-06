@@ -159,6 +159,14 @@ ProjectData = [
         linkcode: 'https://github.com/Tekhlay/Module1-capstone-project',
         linkdemo: 'https://tekhlay.github.io/Module1-capstone-project/',
         description: 'This project is final capstone for module 1 in microverse. It is about online web development website. The project adapts both mobile and desktop sizes.',
+    }, 
+    {
+        id: 3,
+        img: './images/carrental.PNG',
+        langauage: ['Ruby', 'React', 'JavaScript', 'Redux', 'Ruby on Rails'],
+        linkcode: 'https://github.com/Tekhlay/Car_rental_frontend',
+        linkdemo: 'https://car-rental-frontend-pink.vercel.app/login',
+        description: 'This project is final capstone for module 1 in microverse. It is about online web development website. The project adapts both mobile and desktop sizes.',
     }
 ];
 
