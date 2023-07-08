@@ -176,14 +176,21 @@ total.textContent = ProjectData.length;
 ProjectData.forEach(element => {
     const project = document.createElement('dv');
     project.className = 'project-card';
-    project.innerHTML = `<img src=${element.img} alt="LeaderBoard">
-    <p>Languages</p>
-    <ul>
-      <li class="my-projects">${element.langauage}</li>
-    </ul>
-    <div class="btndetails">
+    project.innerHTML = `
+        <img src=${element.img} alt="LeaderBoard">
+        <p>Languages</p>
+        <ul class="languages">
+        </ul>
+        <div class="btndetails">
       <button class="see-prejoect">See More</button>
-    </div>`;
+    </div>
+        `
+        let tech = project.querySelector('.languages');
+        element.langauage.forEach(lang => {
+            tech.innerHTML += `<li class="tech-list">${lang}</li>`;
+    });
+    `
+    `;
     projectList.appendChild(project);
 });
 

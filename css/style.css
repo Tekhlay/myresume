@@ -585,11 +585,28 @@ img {
         gap: 10px;
         flex-wrap: wrap;
         justify-content: center;
+        margin-bottom: 24px;
     }
 
-    .project-card li {
-        background-color: #666763;
-        padding: 10px;
+    .tech-list {
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        letter-spacing: 0.03em;
+        color: #3a4a42;
+        background-color: #ebf0ee;
+        border-radius: 4px;
+        padding: 8px 12px;
+        margin-left: 4px;
+        margin-right: 4px;
+        margin-top: 10px;
+    }
+
+    .tech-list:hover {
+        background-color: #3a4e05;
+        border-radius: 10px;
+        color: white;
     }
 
     .btndetails {
