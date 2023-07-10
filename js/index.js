@@ -175,11 +175,32 @@ ProjectData = [
     },
     {
         id: 5,
-        img: './images/Bookstore.jpg',
-        langauage: ['HTML5', 'CSS3', 'JavaScript'],
-        linkcode: 'https://github.com/Tekhlay/Awesome-books-ES6',
-        linkdemo: 'https://tekhlay.github.io/Awesome-books-ES6/?#',
-        description: 'This is a simple bookstore web application that allows users to add or remove books from a list. The project was developed using Vanilla JavaScript with modern ES6 syntax, HTML, and CSS.The JavaScript code uses functions such as querySelector() and addEventListener() to interact with the HTML elements and update the content dynamically. The CSS file is used to style the application and provide a visually appealing interface. The HTML file provides the structure and content of the webpage. Overall, this project demonstrates the basics of JavaScript development and how to manipulate the Document Object Model (DOM) using Vanilla JavaScript. It also highlights the importance of using modern ES6 syntax to write efficient and maintainable code.',
+        title: 'Budget App',
+        img: './images/BuddgetApp.PNG',
+        langauage: ['Ruby', 'Ruby on Rails', 'Bootstrap', 'PostgreSQL'],
+        linkcode: 'https://github.com/Tekhlay/Budget-app',
+        linkdemo: 'https://budget-app-4fhu.onrender.com/',
+        description: 'This is a mobile app developed for educational purposes using Ruby on Rails. The app enables clients to manage their transactions and add new food items, along with detailed recipe processes and procedures.',
+    },
+
+    {
+        id: 6,
+        title: 'Meal Sharing App',
+        img: './images/mealapp.jpg',
+        langauage: ['API', 'Bootstrap', 'Webpack', 'JavaScript'],
+        linkcode: 'https://github.com/Tekhlay/JS-GROUP-CAPSTONE-PROJECT',
+        linkdemo: 'https://tekhlay.github.io/JS-GROUP-CAPSTONE-PROJECT/dist/',
+        description: 'The meal app is a capstone project developed using Javascript API. The project contains 3 sections home page, a comments popup, and a reservations popup. The whole project is talking about food restaurants. It allows customers to hit like and make a comment on their favorite food item.',
+    },
+
+    {
+        id: 7,
+        title: 'Crypto Tracker App',
+        img: './images/cryptoApp.jpg',
+        langauage: ['API', 'Bootstrap', 'React', 'JavaScript', 'Redux'],
+        linkcode: 'https://github.com/Tekhlay/react-capstone',
+        linkdemo: 'https://crypto-tracker-app.onrender.com/',
+        description: 'About Best global Coin Price Tracker in the Market With Crypto Tracker, you can manage all your crypto assets from one interface. It is a Single page application. It is developed using React Library and redux store. It allows users see current market value and price of different global digital currencies and search for a specfic digital coin.',
     }
 ];
 
