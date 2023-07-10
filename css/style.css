@@ -287,6 +287,7 @@ img {
     padding: 20px;
     align-self: flex-start;
     list-style: none;
+    display: flex;
 }
 
 .project-details {
@@ -622,7 +623,7 @@ img {
 
     .project-popup {
         position: absolute;
-        width:70%;
+        width:calc(100% - 284px);
         height: 900px;
         left: 90px;
         top: 70px;
@@ -632,7 +633,6 @@ img {
         color: rgb(42, 36, 36);
         background: #fffffe;
         box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
-       
     }
 
     .image-card {
@@ -684,6 +684,7 @@ img {
         padding: 20px;
         align-self: center;
         list-style: none;
+        display: flex;
     }
 
     .project-details {
