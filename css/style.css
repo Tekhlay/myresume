@@ -43,7 +43,6 @@ img {
 .menu-bar {
     border: none;
     outline: none;
-    /* background: rgba(0, 0, 0, 0.5); */
     background-color: #3a4e05;
 }
 
@@ -124,7 +123,6 @@ img {
 }
 
 .bio-content {
-    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -132,14 +130,16 @@ img {
 }
 .headline-first {
     font-size: 1.5em;
-    font-weight: 700;
+    font-weight: 600;
     color: #172b4d;
 }
 
 .headline-second {
-    font-size: 1.2em;
+    width: 100%;
+    font-size: 1em;
     font-weight: 400;
     color: #247f59;
+    text-align: justify;
 }
 
 .bio-link ul {
@@ -185,7 +185,6 @@ img {
     width: 350px;
     height: auto;
     background-color: #fffffe;
-    /* border: 2px solid #666763; */
     box-shadow: 1px 10px 10px 0 rgb(0 0 0 / 20%);
     border-radius: 10px;
     display: flex;
@@ -297,7 +296,6 @@ img {
     font-size: 18px;
     line-height: 27px;
     text-align: justify;
-    /* color: #1A2236; */
 }
 
 .about-me {
@@ -489,7 +487,7 @@ img {
     }
 
     .resume-content {
-        width: 97%;
+        width: 100%;
         padding: 20px;
     }
 
@@ -509,7 +507,6 @@ img {
         flex-direction: column;
         gap: 20px;
         font-size: 20px;
-
     }
 
     .bio-pic {
