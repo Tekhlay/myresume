@@ -242,9 +242,8 @@ workdetail = (task) => `
 </div>
 
 <div class="project-details"><p> About the project</p>${ProjectData[task].description}</div> 
-<ul>
-<p> Language used</p>
-<li>${ProjectData[task].langauage}</li>
+<ul class="tech-stacks">
+${ProjectData[task].langauage.map((lang) => `<li class="tech-list">${lang}</li>`).join('')}
 </ul>`;
 for(let i = 0; i < seemore.length; i += 1){
     seemore[i].addEventListener('click', () => {
