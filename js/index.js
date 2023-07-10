@@ -130,6 +130,7 @@ const projectList = document.querySelector('.project-list');
 ProjectData = [
     {
         id: 0,
+        title: 'Leader Board',
         img: './images/Project1.PNG',
         langauage: ['HTML', 'CSS', 'JavaScript', 'Webpack'],
         linkcode: 'https://github.com/Tekhlay/Leaderboard',
@@ -138,6 +139,7 @@ ProjectData = [
     },
     {
         id: 1,
+        title: 'To-Do List App',
         img: './images/todolist.PNG',
         langauage: ['HTML', 'CSS', 'JavaScript'],
         linkcode: 'https://github.com/Tekhlay/TO-DO-List',
@@ -146,14 +148,16 @@ ProjectData = [
     },
     {
         id: 2,
-        img: './images/awesombook.PNG',
-        langauage: ['HTML', 'CSS', 'JavaScript'],
+        title: 'Awesome Books Store',
+        img: './images/Bookstore.jpg',
+        langauage: ['HTML5', 'CSS3', 'JavaScript'],
         linkcode: 'https://github.com/Tekhlay/Awesome-books-ES6',
-        linkdemo: 'https://tekhlay.github.io/Awesome-books-ES6',
-        description: 'This is a simple bookstore web application that allows users to add or remove books from the list. the project is done by using Vanilla JavaScript with modern ES6 syntax, HTML, and CSS.',
+        linkdemo: 'https://tekhlay.github.io/Awesome-books-ES6/?#',
+        description: 'This is a simple bookstore web application that allows users to add or remove books from a list. The project was developed using Vanilla JavaScript with modern ES6 syntax, HTML, and CSS.The JavaScript code uses functions such as querySelector() and addEventListener() to interact with the HTML elements and update the content dynamically.',
     },
     {
         id: 3,
+        title: 'Cona Tech Coding School',
         img: './images/capstorne1.PNG',
         langauage: ['HTML', 'CSS', 'JavaScript'],
         linkcode: 'https://github.com/Tekhlay/Module1-capstone-project',
@@ -161,12 +165,21 @@ ProjectData = [
         description: 'This project is final capstone for module 1 in microverse. It is about online web development website. The project adapts both mobile and desktop sizes.',
     }, 
     {
-        id: 3,
+        id: 4,
+        title: 'Car Rental App',
         img: './images/carrental.PNG',
         langauage: ['Ruby', 'React', 'JavaScript', 'Redux', 'Ruby on Rails'],
         linkcode: 'https://github.com/Tekhlay/Car_rental_frontend',
         linkdemo: 'https://car-rental-frontend-pink.vercel.app/login',
         description: 'This project is final capstone for module 1 in microverse. It is about online web development website. The project adapts both mobile and desktop sizes.',
+    },
+    {
+        id: 5,
+        img: './images/Bookstore.jpg',
+        langauage: ['HTML5', 'CSS3', 'JavaScript'],
+        linkcode: 'https://github.com/Tekhlay/Awesome-books-ES6',
+        linkdemo: 'https://tekhlay.github.io/Awesome-books-ES6/?#',
+        description: 'This is a simple bookstore web application that allows users to add or remove books from a list. The project was developed using Vanilla JavaScript with modern ES6 syntax, HTML, and CSS.The JavaScript code uses functions such as querySelector() and addEventListener() to interact with the HTML elements and update the content dynamically. The CSS file is used to style the application and provide a visually appealing interface. The HTML file provides the structure and content of the webpage. Overall, this project demonstrates the basics of JavaScript development and how to manipulate the Document Object Model (DOM) using Vanilla JavaScript. It also highlights the importance of using modern ES6 syntax to write efficient and maintainable code.',
     }
 ];
 
@@ -178,7 +191,7 @@ ProjectData.forEach(element => {
     project.className = 'project-card';
     project.innerHTML = `
         <img src=${element.img} alt="LeaderBoard">
-        <p>Languages</p>
+        <p>${element.title}</p>
         <ul class="languages">
         </ul>
         <div class="btndetails">
