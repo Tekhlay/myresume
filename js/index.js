@@ -130,13 +130,14 @@ const projectList = document.querySelector('.project-list');
 ProjectData = [
     {
         id: 0,
-        title: 'Leader Board',
-        img: './images/Project1.PNG',
-        langauage: ['HTML', 'CSS', 'JavaScript', 'Webpack'],
-        linkcode: 'https://github.com/Tekhlay/Leaderboard',
-        linkdemo: 'https://tekhlay.github.io/Leaderboard/dist/',
-        description: 'This is a simple website project for the Leaderboard list app. Which alow users to see list of their scores.',
+        title: 'Car Rental App',
+        img: './images/carrental.PNG',
+        langauage: ['Ruby', 'React', 'JavaScript', 'Redux', 'Ruby on Rails'],
+        linkcode: 'https://github.com/Tekhlay/Car_rental_frontend',
+        linkdemo: 'https://car-rental-frontend-pink.vercel.app/login',
+        description: 'This project is final capstone for module 1 in microverse. It is about online web development website. The project adapts both mobile and desktop sizes.',
     },
+    
     {
         id: 1,
         title: 'To-Do List App',
@@ -164,14 +165,15 @@ ProjectData = [
         linkdemo: 'https://tekhlay.github.io/Module1-capstone-project/',
         description: 'This project is final capstone for module 1 in microverse. It is about online web development website. The project adapts both mobile and desktop sizes.',
     }, 
+    
     {
         id: 4,
-        title: 'Car Rental App',
-        img: './images/carrental.PNG',
-        langauage: ['Ruby', 'React', 'JavaScript', 'Redux', 'Ruby on Rails'],
-        linkcode: 'https://github.com/Tekhlay/Car_rental_frontend',
-        linkdemo: 'https://car-rental-frontend-pink.vercel.app/login',
-        description: 'This project is final capstone for module 1 in microverse. It is about online web development website. The project adapts both mobile and desktop sizes.',
+        title: 'Leader Board',
+        img: './images/Project1.PNG',
+        langauage: ['HTML', 'CSS', 'JavaScript', 'Webpack'],
+        linkcode: 'https://github.com/Tekhlay/Leaderboard',
+        linkdemo: 'https://tekhlay.github.io/Leaderboard/dist/',
+        description: 'This is a simple website project for the Leaderboard list app. Which alow users to see list of their scores.',
     },
     {
         id: 5,
@@ -237,8 +239,8 @@ workdetail = (task) => `
 </div>
 <div class="image-card"> <img src=${ProjectData[task].img} alt="LeaderBoard"> </div>
 <div class="btnsource">
-        <a href="${ProjectData[task].linkcode}"> Source Code <i class="fa fa-github"></i></a>
-        <a href="${ProjectData[task].linkdemo}">See Live Demo <i class="fa-solid fa-share-from-square"></i></a>
+        <a href="${ProjectData[task].linkcode}" target="_blank"> Source Code <i class="fa fa-github"></i></a>
+        <a href="${ProjectData[task].linkdemo}" target="_blank">See Live Demo <i class="fa-solid fa-share-from-square"></i></a>
 </div>
 
 <div class="project-details"><p> About the project</p>${ProjectData[task].description}</div> 
@@ -308,7 +310,7 @@ publicationData.forEach((element) => {
     <div class="papers">
     <h3 class="article-title">${element.title}</h3>
     <p class="article-description">${element.description}</p>
-    <a class="article-url" href="${element.doi}">Read Full Article</a>
+    <a class="article-url" href="${element.doi}" target="_blank">Read Full Article</a>
     </div>
     </div>`;
     puplications.appendChild(articles);
