@@ -239,11 +239,11 @@ workdetail = (task) => `
 </div>
 <div class="image-card"> <img src=${ProjectData[task].img} alt="LeaderBoard"> </div>
 <div class="btnsource">
-        <a href="${ProjectData[task].linkcode}" target="_blank"> Source Code <i class="fa fa-github"></i></a>
-        <a href="${ProjectData[task].linkdemo}" target="_blank">See Live Demo <i class="fa-solid fa-share-from-square"></i></a>
+        <a href="${ProjectData[task].linkcode}" target="_blank"> See Source <i class="fa fa-github"></i></a>
+        <a href="${ProjectData[task].linkdemo}" target="_blank">See Live <i class="fa fa-arrow-up-right-from-square"></i></a>
 </div>
 
-<div class="project-details"><p> About the project</p>${ProjectData[task].description}</div> 
+<div class="project-details"><strong> About the project</strong><br>${ProjectData[task].description}</div> 
 <ul class="tech-stacks">
 ${ProjectData[task].langauage.map((lang) => `<li class="tech-list">${lang}</li>`).join('')}
 </ul>`;

@@ -235,18 +235,18 @@ img {
 }
 
 .project-popup {
+    display: flex;
     position: fixed;
+    top: 0;
     width: 100%;
     height: 100%;
-    left: 0;
-    top: 0;
-    display: flex;
+    z-index: 1000;
+    overflow: auto;
+    background-color: #191765;
     flex-direction: column;
     align-items: center;
-    color: rgb(42, 36, 36);
-    background: #fffffe;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
-   
+    color: rgb(245, 243, 243);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25); 
 }
 
 .project-popup img {
@@ -296,9 +296,16 @@ img {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
     line-height: 27px;
     text-align: justify;
+}
+
+.tech-stacks li {
+    font-size: 10px;
+    line-height: 20px;
+    float: left;
+    padding: 14px;
+    border-left: 1px solid #81818c;
 }
 
 .about-me {
@@ -622,16 +629,17 @@ img {
     }
 
     .project-popup {
-        position: absolute;
-        width:calc(100% - 284px);
-        height: 900px;
-        left: 90px;
-        top: 70px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        overflow: auto;
+        background-color: #191765;
+        color: #fffffe;
         display: flex;
         flex-direction: column;
         align-items: center;
-        color: rgb(42, 36, 36);
-        background: #fffffe;
         box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
     }
 
@@ -653,7 +661,7 @@ img {
     }
 
     .exit span {
-        font-size: 30px;
+        font-size: 40px;
         font-weight: 600;
         align-self: flex-end;
         margin-right: 20px;
@@ -668,16 +676,16 @@ img {
         flex-direction: row;
         gap: 20px;
         align-self: flex-end;
-        margin-right:80px;
+        margin-right:110px;
     }
 
     .btnsource a {
         text-decoration: none;
         font-size: 18px;
-        padding: 10px;
+        padding: 12px;
         background-color: #faeee7;
         border-radius: 10px;
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     .project-popup ul {
