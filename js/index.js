@@ -13,6 +13,7 @@ const close = document.querySelector('.btn-close');
 const ListProject = document.querySelector('.project');
 const mode = document.querySelector('.mode');
 const puplications = document.querySelector('.publications');
+const skills = document.querySelector('.myskills');
 
 
 const date = document.querySelector('.date');
@@ -42,6 +43,7 @@ mobileside.addEventListener('click', () => {
 logo.addEventListener('click', () => {
    about.style.display = 'none'; 
    resume.style.display = 'flex';
+   skills.style.display = 'flex';
    getintouch.style.display = 'flex';
 });
 
@@ -51,6 +53,7 @@ linkabout.addEventListener('click', () => {
     getintouch.style.display = 'none';
     ListProject.style.display = 'none';
     puplications.style.display = 'none';
+    skills.style.display = 'none';
 })
 
 projectLink.addEventListener('click', () => {
@@ -59,6 +62,7 @@ projectLink.addEventListener('click', () => {
     getintouch.style.display = 'none';
     ListProject.style.display = 'block';
     puplications.style.display = 'none';
+    skills.style.display = 'none';
 })
 
 contactlink.addEventListener('click', () => {
@@ -67,6 +71,7 @@ contactlink.addEventListener('click', () => {
     getintouch.style.display = 'flex';
     ListProject.style.display = 'none';
     puplications.style.display = 'none';
+    skills.style.display = 'none';
 })
 
 Linkpublication.addEventListener('click', () => {
@@ -75,6 +80,7 @@ Linkpublication.addEventListener('click', () => {
     getintouch.style.display = 'none';
     ListProject.style.display = 'none';
     puplications.style.display = 'block';
+    skills.style.display = 'none';
 })
 
 const abt = document.querySelector('.about-pop');
@@ -85,6 +91,7 @@ abt.addEventListener('click', () => {
     popUpmenu.style.display = 'none';
     ListProject.style.display = 'none';
     puplications.style.display = 'none';
+    skills.style.display = 'none';
 })
 const prjct = document.querySelector('.projects-pop');
 prjct.addEventListener('click', () => {
@@ -94,6 +101,7 @@ prjct.addEventListener('click', () => {
     ListProject.style.display = 'flex';
     popUpmenu.style.display = 'none';
     puplications.style.display = 'none';
+    skills.style.display = 'none';
 })
 
 const pup = document.querySelector('.publication-pop');
@@ -104,17 +112,19 @@ pup.addEventListener('click', () => {
     ListProject.style.display = 'none';
     popUpmenu.style.display = 'none';
     puplications.style.display = 'flex';
+    skills.style.display = 'none';
 })
 
 
 const contacts = document.querySelector('.contact-link-pop');
 contacts.addEventListener('click', () => {
     about.style.display = 'none';
-    resume.style.display = 'flex';
+    resume.style.display = 'none';
     getintouch.style.display = 'flex';
     ListProject.style.display = 'none';
     popUpmenu.style.display = 'none';
     puplications.style.display = 'none';
+    skills.style.display = 'none';
 })
 
 
