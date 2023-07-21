@@ -160,7 +160,7 @@ ProjectData = [
     {
         id: 2,
         title: 'Awesome Books Store',
-        img: './images/Bookstore.jpg',
+        img: './images/BookStore.jpg',
         langauage: ['HTML5', 'CSS3', 'JavaScript'],
         linkcode: 'https://github.com/Tekhlay/Awesome-books-ES6',
         linkdemo: 'https://tekhlay.github.io/Awesome-books-ES6/?#',
