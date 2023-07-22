@@ -284,7 +284,7 @@ const publicationData = [
     {
         id: 1,
         img: './images/1640726723.png',
-        title: 'An Integrated KnowledgeBased System for Early Detection of Eye Refractive Error Using Data Mining',
+        title: 'An Integrated Knowledge Based System for Early Detection of Eye Refractive Error Using Data Mining',
         description: 'Refractive error is one of optical defect in the human visual system. Refractive error is a very common disease these days in all populations and in all age groups. Uncorrected and undetected refractive error contributes to visual impairment, blindness and places a considerable burden on a person in the world. The long use of technological devices such as smart phones also poses a new burden on the human eye.',
         doi:'https://www.ajol.info/index.php/sinet/article/view/219306',
     },
